@@ -1,0 +1,15 @@
+.inputform {
+    width: 200px;
+    border-radius: 5px;
+    border-color: hotpink;
+}
+.message-button {
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+.message-button:hover {
+   background-color: blueviolet;
+   color: white;
+   cursor: pointer;
+
+}
