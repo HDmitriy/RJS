@@ -29,6 +29,37 @@ export const Chatlist = () => {
       dispatch(addChatAction(name))
     };  
 
+    /* 
+    const addChat = () => {
+      dispatch(handleInitFirebaseChats(chatListSelector))
+    };  
+
+    const handleInitFirebaseChats = async () => {
+      const id = firebase.auth().currentUser.uid;
+  
+      await firebase
+        .database()
+        .ref("chats")
+        .child(id)
+        .child("name")
+        .on("value", (snapshot) => {
+          dispatch(addChatAction({ name: snapshot.val() }));
+        });
+    };
+  
+ 
+
+    const setChatName = (event) => {
+      const db = firebase.database();
+      console.log(name);
+      const id = firebase.auth().currentUser.uid;
+  
+      db.ref("chats").child(id).child("Chatname").set(event.target.value);
+    }; */
+
+
+    // Отправляет и сохраняет чат в дб, но не могу его нормально отрисовать
+
     return (
       <div>
         <TextField placeholder='Введите название чата' type="text" onChange={setChatName} />
