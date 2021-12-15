@@ -1,0 +1,3 @@
+export const GET_CAT_REQUEST = "CAT::GET_CAT_REQUEST";
+export const GET_CAT_SUCCESS = "CAT::GET_CAT_SUCCESS";
+export const GET_CAT_ERROR = "CAT::GET_CAT_ERROR";
